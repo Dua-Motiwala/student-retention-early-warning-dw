@@ -3,9 +3,8 @@
 *.env
 *.env.local
 
-# Large database dumps & backups (Up to 1.1GB, exceeds GitHub limit)
+# Large database dumps & snapshots in backups (Up to 1.1GB, exceeds GitHub limit)
 backups/
-*.sql
 
 # Temporary scratch testing scripts
 scratch/
