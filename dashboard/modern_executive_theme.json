@@ -1,0 +1,71 @@
+{
+  "name": "Modern Executive Floating Cards",
+  "dataColors": [
+    "#2563EB",
+    "#10B981",
+    "#EF4444",
+    "#F59E0B",
+    "#3B82F6",
+    "#8B5CF6",
+    "#06B6D4",
+    "#EC4899"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#0F172A",
+  "tableAccent": "#2563EB",
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#EEF2F6"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E2E8F0"
+              }
+            },
+            "radius": 10
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#CBD5E1"
+              }
+            },
+            "position": "Outer",
+            "direction": "BottomRight",
+            "blur": 8,
+            "angle": 45
+          }
+        ]
+      }
+    }
+  }
+}

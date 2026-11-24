@@ -1,0 +1,92 @@
+week_key,week_number,week_label,academic_phase,is_early_warning_window,start_day_offset,end_day_offset
+1,-4,Week -4,Pre-Course Preparation,0,-28,-22
+2,-3,Week -3,Pre-Course Preparation,0,-21,-15
+3,-2,Week -2,Pre-Course Preparation,0,-14,-8
+4,-1,Week -1,Pre-Course Preparation,0,-7,-1
+5,0,Week 0,Early Course & Onboarding,1,0,6
+6,1,Week 1,Early Course & Onboarding,1,7,13
+7,2,Week 2,Early Course & Onboarding,1,14,20
+8,3,Week 3,Early Course & Onboarding,1,21,27
+9,4,Week 4,Early Course & Onboarding,1,28,34
+10,5,Week 5,Mid-Term Core,1,35,41
+11,6,Week 6,Mid-Term Core,0,42,48
+12,7,Week 7,Mid-Term Core,0,49,55
+13,8,Week 8,Mid-Term Core,0,56,62
+14,9,Week 9,Mid-Term Core,0,63,69
+15,10,Week 10,Mid-Term Core,0,70,76
+16,11,Week 11,Mid-Term Core,0,77,83
+17,12,Week 12,Mid-Term Core,0,84,90
+18,13,Week 13,Mid-Term Core,0,91,97
+19,14,Week 14,Mid-Term Core,0,98,104
+20,15,Week 15,Late Term / Pre-Exam,0,105,111
+21,16,Week 16,Late Term / Pre-Exam,0,112,118
+22,17,Week 17,Late Term / Pre-Exam,0,119,125
+23,18,Week 18,Late Term / Pre-Exam,0,126,132
+24,19,Week 19,Late Term / Pre-Exam,0,133,139
+25,20,Week 20,Late Term / Pre-Exam,0,140,146
+26,21,Week 21,Late Term / Pre-Exam,0,147,153
+27,22,Week 22,Late Term / Pre-Exam,0,154,160
+28,23,Week 23,Late Term / Pre-Exam,0,161,167
+29,24,Week 24,Late Term / Pre-Exam,0,168,174
+30,25,Week 25,Late Term / Pre-Exam,0,175,181
+31,26,Week 26,Exams & Wrap-Up,0,182,188
+32,27,Week 27,Exams & Wrap-Up,0,189,195
+33,28,Week 28,Exams & Wrap-Up,0,196,202
+34,29,Week 29,Exams & Wrap-Up,0,203,209
+35,30,Week 30,Exams & Wrap-Up,0,210,216
+36,31,Week 31,Exams & Wrap-Up,0,217,223
+37,32,Week 32,Exams & Wrap-Up,0,224,230
+38,33,Week 33,Exams & Wrap-Up,0,231,237
+39,34,Week 34,Exams & Wrap-Up,0,238,244
+40,35,Week 35,Exams & Wrap-Up,0,245,251
+41,36,Week 36,Exams & Wrap-Up,0,252,258
+42,37,Week 37,Exams & Wrap-Up,0,259,265
+43,38,Week 38,Exams & Wrap-Up,0,266,272
+44,39,Week 39,Extended / Post-Term Review,0,273,279
+45,40,Week 40,Extended / Post-Term Review,0,280,286
+46,41,Week 41,Extended / Post-Term Review,0,287,293
+47,42,Week 42,Extended / Post-Term Review,0,294,300
+48,43,Week 43,Extended / Post-Term Review,0,301,307
+49,44,Week 44,Extended / Post-Term Review,0,308,314
+50,45,Week 45,Extended / Post-Term Review,0,315,321
+51,46,Week 46,Extended / Post-Term Review,0,322,328
+52,47,Week 47,Extended / Post-Term Review,0,329,335
+53,48,Week 48,Extended / Post-Term Review,0,336,342
+54,49,Week 49,Extended / Post-Term Review,0,343,349
+55,50,Week 50,Extended / Post-Term Review,0,350,356
+56,51,Week 51,Extended / Post-Term Review,0,357,363
+57,52,Week 52,Extended / Post-Term Review,0,364,370
+58,53,Week 53,Extended / Post-Term Review,0,371,377
+59,54,Week 54,Extended / Post-Term Review,0,378,384
+60,55,Week 55,Extended / Post-Term Review,0,385,391
+61,56,Week 56,Extended / Post-Term Review,0,392,398
+62,57,Week 57,Extended / Post-Term Review,0,399,405
+63,58,Week 58,Extended / Post-Term Review,0,406,412
+64,59,Week 59,Extended / Post-Term Review,0,413,419
+65,60,Week 60,Extended / Post-Term Review,0,420,426
+66,61,Week 61,Extended / Post-Term Review,0,427,433
+67,62,Week 62,Extended / Post-Term Review,0,434,440
+68,63,Week 63,Extended / Post-Term Review,0,441,447
+69,64,Week 64,Extended / Post-Term Review,0,448,454
+70,65,Week 65,Extended / Post-Term Review,0,455,461
+71,66,Week 66,Extended / Post-Term Review,0,462,468
+72,67,Week 67,Extended / Post-Term Review,0,469,475
+73,68,Week 68,Extended / Post-Term Review,0,476,482
+74,69,Week 69,Extended / Post-Term Review,0,483,489
+75,70,Week 70,Extended / Post-Term Review,0,490,496
+76,71,Week 71,Extended / Post-Term Review,0,497,503
+77,72,Week 72,Extended / Post-Term Review,0,504,510
+78,73,Week 73,Extended / Post-Term Review,0,511,517
+79,74,Week 74,Extended / Post-Term Review,0,518,524
+80,75,Week 75,Extended / Post-Term Review,0,525,531
+81,76,Week 76,Extended / Post-Term Review,0,532,538
+82,77,Week 77,Extended / Post-Term Review,0,539,545
+83,78,Week 78,Extended / Post-Term Review,0,546,552
+84,79,Week 79,Extended / Post-Term Review,0,553,559
+85,80,Week 80,Extended / Post-Term Review,0,560,566
+86,81,Week 81,Extended / Post-Term Review,0,567,573
+87,82,Week 82,Extended / Post-Term Review,0,574,580
+88,83,Week 83,Extended / Post-Term Review,0,581,587
+89,84,Week 84,Extended / Post-Term Review,0,588,594
+90,85,Week 85,Extended / Post-Term Review,0,595,601
+91,86,Week 86,Extended / Post-Term Review,0,602,608

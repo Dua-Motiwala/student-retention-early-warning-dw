@@ -1,0 +1,34 @@
+# Environment variables & secrets (Never commit passwords)
+.env
+*.env
+*.env.local
+
+# Large raw data files (Exceeds GitHub 100MB limit, e.g. studentVle.csv is 453MB)
+data/raw/
+*.csv.gz
+
+# Large database dumps & backups (Up to 1.1GB, exceeds GitHub limit)
+backups/
+*.sql
+
+# Temporary scratch testing scripts
+scratch/
+
+# Python cache & build files
+__pycache__/
+*.py[cod]
+*.class
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Power BI temp files
+*.pbix.tmp
+
+# OS & Editor temp files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

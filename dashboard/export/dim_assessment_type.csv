@@ -1,0 +1,4 @@
+assessment_type_key,assessment_type,assessment_type_name,marking_method,is_exam
+1,TMA,Tutor Marked Assessment,Manual / Tutor,0
+2,CMA,Computer Marked Assessment,Automated,0
+3,Exam,Final Examination,Formal Exam,1

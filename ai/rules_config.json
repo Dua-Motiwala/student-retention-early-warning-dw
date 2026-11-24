@@ -1,0 +1,113 @@
+{
+    "_meta": {
+        "description": "Data-driven thresholds for the backward-chaining expert system.",
+        "derived_from": "gold.gold_student_weekly_engagement percentile analysis (Phase 6 EDA)",
+        "date": "2026-11-22",
+        "methodology": "Thresholds set at P25 (severe) and P15 (critical) of the full student cohort distribution at each reference week. These percentiles were chosen because at-risk students' medians cluster near P25-P35, so flagging below P25 captures the most disengaged tail."
+    },
+
+    "thresholds": {
+        "low_engagement": {
+            "description": "Student VLE click activity in the last 2 weeks is below the 25th percentile of the cohort at that week.",
+            "source": "clicks_last_2_weeks at P25 across weeks 3/5/8",
+            "values": {
+                "week_3": 53,
+                "week_5": 39,
+                "week_8": 33,
+                "default": 40
+            },
+            "note": "Declining thresholds reflect natural engagement tapering across the cohort after initial course enthusiasm."
+        },
+
+        "very_low_engagement": {
+            "description": "Student VLE click activity in the last 2 weeks is below the 15th percentile — critically disengaged.",
+            "source": "clicks_last_2_weeks at P15 across weeks 3/5/8",
+            "values": {
+                "week_3": 34,
+                "week_5": 25,
+                "week_8": 20,
+                "default": 25
+            }
+        },
+
+        "low_cumulative_clicks": {
+            "description": "Total cumulative clicks to date fall below the 25th percentile.",
+            "source": "cumulative_clicks at P25",
+            "values": {
+                "week_3": 144,
+                "week_5": 203,
+                "week_8": 276,
+                "default": 200
+            }
+        },
+
+        "low_active_days": {
+            "description": "Number of active VLE interaction days this week is critically low.",
+            "source": "active_days at P25 (consistently ~1 day/week for at-risk students)",
+            "value": 1
+        },
+
+        "low_avg_score": {
+            "description": "Average assessment score so far is below the 25th percentile of scored students.",
+            "source": "avg_score_so_far at P25 ≈ 66-70 across reference weeks",
+            "value": 65.0
+        },
+
+        "very_low_avg_score": {
+            "description": "Average assessment score so far is below the 15th percentile — academically at severe risk.",
+            "source": "avg_score_so_far at P15 ≈ 58-63",
+            "value": 58.0
+        },
+
+        "low_weighted_score": {
+            "description": "Cumulative weighted score so far falls below the 25th percentile.",
+            "source": "weighted_score_so_far at P25",
+            "values": {
+                "week_3": 0.0,
+                "week_5": 3.9,
+                "week_8": 9.3,
+                "default": 5.0
+            }
+        },
+
+        "missed_assessments": {
+            "description": "Student has submitted fewer assessments than the cohort 25th percentile at that week.",
+            "source": "assessments_submitted_so_far at P25",
+            "values": {
+                "week_3": 1,
+                "week_5": 1,
+                "week_8": 2,
+                "default": 1
+            }
+        },
+
+        "has_late_submissions": {
+            "description": "Student has at least 1 late submission. At-risk median = 0, but any lateness is a signal.",
+            "source": "late_submissions_so_far > 0 (observed r=+0.14 with at-risk status at week 5)",
+            "value": 1
+        },
+
+        "negative_wow_change": {
+            "description": "Week-over-week click change is negative (engagement declining).",
+            "source": "wow_click_change < 0 (direct velocity measure)",
+            "value": 0
+        }
+    },
+
+    "risk_scoring": {
+        "description": "Risk score = (number of triggered sub-goals / total possible sub-goals) * 100. Risk level thresholds are calibrated to yield ~30% High, ~25% Medium, ~45% Low across the student population, matching the actual ~31% withdrawal + fail rate in OULAD.",
+        "high_threshold": 50.0,
+        "medium_threshold": 25.0,
+        "note": "Score >= 50 → High, 25-49 → Medium, < 25 → Low"
+    },
+
+    "rules": {
+        "description": "The rule base for backward chaining. Each top-level goal decomposes into sub-goals resolved against student facts.",
+        "AT_RISK": {
+            "decomposition": "OR(high_risk_composite, medium_risk_composite)",
+            "sub_goals": ["low_engagement", "very_low_engagement", "low_cumulative_activity",
+                          "low_performance", "very_low_performance", "missed_assessments",
+                          "has_late_submissions", "declining_engagement", "inactive_this_week"]
+        }
+    }
+}
