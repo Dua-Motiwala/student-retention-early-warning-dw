@@ -417,6 +417,6 @@ Click the tab at the bottom: **`5. Demographics & Retention`**.
    - On Page 1, click **CCC** in the course table -> All cards cross-filter to show CCC's specific metrics (Pass Rate 43.5%, Withdrawal Rate 38.7%). Click empty space in the table to clear.
    - On Page 2, select **Week 5** and click **High** risk -> Table filters to exactly 2,292 intervention alerts.
 2. **Save Your File:**
-   - Click **File** -> **Save As...** -> Save as `Student_Retention_Early_Warning.pbix` in `dashboard/`.
+   - Click **File** -> **Save As...** -> Save as `.pbix` in `dashboard/`.
 3. **Export to PDF:**
    - Click **File** -> **Export** -> **Export to PDF** to create the final 5-page submission document.

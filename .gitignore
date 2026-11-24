@@ -3,10 +3,6 @@
 *.env
 *.env.local
 
-# Large raw data files (Exceeds GitHub 100MB limit, e.g. studentVle.csv is 453MB)
-data/raw/
-*.csv.gz
-
 # Large database dumps & backups (Up to 1.1GB, exceeds GitHub limit)
 backups/
 *.sql
@@ -17,7 +13,7 @@ scratch/
 # Python cache & build files
 __pycache__/
 *.py[cod]
-*.class
+*$py.class
 *.pyd
 .Python
 env/
